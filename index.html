@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Invitation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="letter-container">
+        <h1>Invitation Card</h1>
+		<h2>💗₊˚⋆୨୧🧸🎀♡</h2>
+        <div class="picture-card">
+            <img src="pics/1.jpg" alt="Our picture">
+        </div>
+        <p>Will you be my Valentine? 💌</p>
+        <div class="button-group">
+            <button class="yes-btn" onclick="handleYes()">YES NA YES </button>
+            <button class="no-btn" onclick="handleNo()">NO</button>
+        </div>
+    </div>
+
+    <!-- Yes Response Modal -->
+    <div id="yesModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Happy Valentine's Day!</h2>
+            <div class="message-card">
+                <div class="invite-detail">
+                    <span class="detail-icon">📅</span>
+                    <div>
+                        <strong>When:</strong> February 14, 2026
+                    </div>
+                </div>
+                <div class="invite-detail">
+                    <span class="detail-icon">🕖</span>
+                    <div>
+                        <strong>Time:</strong> 6 AM – 5 PM
+                    </div>
+                </div>
+                <div class="invite-detail">
+                    <span class="detail-icon">📍</span>
+                    <div>
+                        <strong>Place:</strong> Camaya Coast, Mariveles, Bataan
+                    </div>
+                </div>
+                <div class="invite-detail">
+                    <span class="detail-icon">👙</span>
+                    <div>
+                        <strong>Attire:</strong> Casual beachwear (don't forget your best dress and swimsuit!)
+                    </div>
+                </div>
+                <button class="confirm-btn" onclick="showGifs()">I'll be with you</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- GIF Modal -->
+    <div id="gifModal" class="modal">
+        <div class="modal-content gif-content">
+            <span class="close-btn" onclick="closeGifModal()">&times;</span>
+            <h2>Yay!</h2>
+            <div class="gif-container">
+                <img src="pics/2.gif" alt="Celebration GIF" class="modal-gif">
+            </div>
+        </div>
+    </div>
+
+    <!-- No Response Modal -->
+    <div id="noModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2></h2>
+            <p>HINDI PWEDENG HINDI KA SASAMA, MAGAGALIT AKO SAYO -MISTER</p>
+        </div>
+    </div>
+
+    <script src="func.js"></script>
+</body>
+</html>
